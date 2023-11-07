@@ -27,7 +27,7 @@ ul {
     text-align: center;
 }
 
-.primary a:link, a:visited{
+a:link, a:visited{
     color: #655d51;
     text-decoration: none;
 }
