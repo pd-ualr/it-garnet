@@ -1,11 +1,28 @@
-/* Box Sizing */
-
 html {
-    box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Global Styles */
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #ffdada;
+}
+
+main {
+  border-radius: 25px;
+  padding: 25px;
+  margin: 40px auto;
+  background-color: #f9b5b5;
+  width: 60vw;
+}
+
+a:link,
+a:visited {
+  color: #000000;
+}/*# sourceMappingURL=style.css.map */

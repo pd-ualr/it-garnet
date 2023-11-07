@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+$mainFont: "Outfit", sans-serif;
+$pink1: #ffdada;
+$pink2: #f9b5b5;
+$pink3: #f48f8f;
+
+@mixin roundedSections {
+  border-radius: 25px;
+  padding: 25px;
+  margin: 40px auto;
+}
+
+/* Global Styles */
+body {
+  font-family: $mainFont;
+  background-color: $pink1;
+}
+
+main {
+  @include roundedSections;
+  background-color: $pink2;
+  width: 60vw;
+}
+
+a:link,
+a:visited {
+  color: #000000;
+}
