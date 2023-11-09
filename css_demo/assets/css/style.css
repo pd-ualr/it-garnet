@@ -11,18 +11,79 @@ html {
 /* Global Styles */
 body {
   font-family: "Outfit", sans-serif;
-  background-color: #ffdada;
+  background-color: #fcebe6;
 }
 
 main {
   border-radius: 25px;
   padding: 25px;
   margin: 40px auto;
-  background-color: #f9b5b5;
+  background-color: #f9d7ce;
   width: 60vw;
 }
 
 a:link,
 a:visited {
   color: #000000;
+}
+
+header.primary {
+  border-radius: 25px;
+  padding: 25px;
+  margin: 40px auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 10px solid #c69386;
+  border-right: 10px solid #c69386;
+  margin: 0px;
+  background-color: #f3beb0;
+  background-image: url(../img/peach.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+header.primary .hgroup {
+  width: 70%;
+}
+header.primary .hgroup h1,
+header.primary .hgroup h2 {
+  margin: 0;
+}
+header.primary .hgroup h2 {
+  color: #262626;
+  font-size: 1.4rem;
+}
+header.primary .hgroup a:link,
+header.primary a:visited {
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+header.primary nav {
+  width: 30%;
+  margin: 0;
+}
+header.primary nav a {
+  display: block;
+  text-decoration: none;
+  background-color: #5f987a;
+  color: #fcebe6;
+  padding: 10px;
+  border-radius: 25px;
+  text-align: center;
+}
+header.primary nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+header.primary nav ul li {
+  margin-bottom: 10px;
+}
+
+#content {
+  border-radius: 25px;
+  padding: 25px;
+  margin: 40px auto;
+  border-bottom: 10px solid #c69386;
+  border-right: 10px solid #c69386;
+  background-color: #f3beb0;
 }/*# sourceMappingURL=style.css.map */

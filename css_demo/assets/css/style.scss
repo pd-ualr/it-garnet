@@ -8,14 +8,27 @@ html {
 }
 
 $mainFont: "Outfit", sans-serif;
-$pink1: #ffdada;
-$pink2: #f9b5b5;
-$pink3: #f48f8f;
+$pink1: #fcebe6;
+$pink2: #f9d7ce;
+$pink3: #f3beb0;
+$pink4: #c69386;
+$blue1: #b7e3e9;
+$blue2: #5f987a;
 
 @mixin roundedSections {
   border-radius: 25px;
   padding: 25px;
   margin: 40px auto;
+}
+
+@mixin imagesBig {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin shadow {
+  border-bottom: 10px solid $pink4;
+  border-right: 10px solid $pink4;
 }
 
 /* Global Styles */
@@ -33,4 +46,58 @@ main {
 a:link,
 a:visited {
   color: #000000;
+}
+
+header.primary {
+  @include roundedSections;
+  @include imagesBig;
+  @include shadow;
+  margin: 0px;
+  background-color: $pink3;
+  background-image: url(../img/peach.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  .hgroup {
+    width: 70%;
+    h1,
+    h2 {
+      margin: 0;
+    }
+    h2 {
+      color: #262626;
+      font-size: 1.4rem;
+    }
+  }
+  .hgroup a:link,
+  a:visited {
+    text-decoration: none;
+    font-size: 2.5rem;
+  }
+  nav {
+    width: 30%;
+    margin: 0;
+    a {
+      display: block;
+      text-decoration: none;
+      background-color: $blue2;
+      color: $pink1;
+      padding: 10px;
+      border-radius: 25px;
+      text-align: center;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+#content {
+  @include roundedSections;
+  @include shadow;
+  background-color: $pink3;
 }
