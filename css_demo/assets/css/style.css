@@ -8,6 +8,11 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Global Styles */
 body {
   font-family: "Outfit", sans-serif;
@@ -18,6 +23,7 @@ main {
   border-radius: 25px;
   padding: 25px;
   margin: 40px auto;
+  background-color: #f3beb0;
   background-color: #f9d7ce;
   width: 60vw;
 }
@@ -28,13 +34,14 @@ a:visited {
 }
 
 header.primary {
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 10px solid #795a52;
+  border-right: 10px solid #795a52;
   border-radius: 25px;
   padding: 25px;
   margin: 40px auto;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-bottom: 10px solid #c69386;
-  border-right: 10px solid #c69386;
+  background-color: #f3beb0;
   margin: 0px;
   background-color: #f3beb0;
   background-image: url(../img/peach.jpg);
@@ -65,7 +72,7 @@ header.primary nav {
 header.primary nav a {
   display: block;
   text-decoration: none;
-  background-color: #5f987a;
+  background-color: #8cb7a1;
   color: #fcebe6;
   padding: 10px;
   border-radius: 25px;
@@ -80,10 +87,61 @@ header.primary nav ul li {
 }
 
 #content {
+  border-bottom: 10px solid #795a52;
+  border-right: 10px solid #795a52;
   border-radius: 25px;
   padding: 25px;
   margin: 40px auto;
-  border-bottom: 10px solid #c69386;
-  border-right: 10px solid #c69386;
   background-color: #f3beb0;
+}
+
+#blog {
+  border-bottom: 10px solid #795a52;
+  border-right: 10px solid #795a52;
+  border-radius: 25px;
+  padding: 25px;
+  margin: 40px auto;
+  background-color: #f3beb0;
+}
+#blog > h2 {
+  font-size: 2rem;
+}
+#blog article.post {
+  background-color: #c69386;
+  display: grid;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 25px;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "postfig posthead" "postfig postcon" "postfig postmet";
+  grid-gap: 25px;
+}
+#blog article.post figure {
+  grid-area: postfig;
+  margin: 0;
+}
+#blog article.post header {
+  grid-area: posthead;
+}
+#blog article.post .post-content {
+  grid-area: postcon;
+}
+#blog article.post .post-meta {
+  grid-area: postmet;
+}
+
+#articles {
+  border-bottom: 10px solid #795a52;
+  border-right: 10px solid #795a52;
+  border-radius: 25px;
+  padding: 25px;
+  margin: 40px auto;
+  background-color: #f3beb0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+}
+
+footer {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

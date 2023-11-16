@@ -12,13 +12,20 @@ $pink1: #fcebe6;
 $pink2: #f9d7ce;
 $pink3: #f3beb0;
 $pink4: #c69386;
-$blue1: #b7e3e9;
-$blue2: #5f987a;
+$pink5: #795a52;
+$green1: #8cb7a1;
+$green2: #5f987a;
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 @mixin roundedSections {
   border-radius: 25px;
   padding: 25px;
   margin: 40px auto;
+  background-color: $pink3;
 }
 
 @mixin imagesBig {
@@ -27,8 +34,8 @@ $blue2: #5f987a;
 }
 
 @mixin shadow {
-  border-bottom: 10px solid $pink4;
-  border-right: 10px solid $pink4;
+  border-bottom: 10px solid $pink5;
+  border-right: 10px solid $pink5;
 }
 
 /* Global Styles */
@@ -49,9 +56,9 @@ a:visited {
 }
 
 header.primary {
-  @include roundedSections;
   @include imagesBig;
   @include shadow;
+  @include roundedSections;
   margin: 0px;
   background-color: $pink3;
   background-image: url(../img/peach.jpg);
@@ -80,7 +87,7 @@ header.primary {
     a {
       display: block;
       text-decoration: none;
-      background-color: $blue2;
+      background-color: $green1;
       color: $pink1;
       padding: 10px;
       border-radius: 25px;
@@ -96,8 +103,53 @@ header.primary {
   }
 }
 
-#content {
-  @include roundedSections;
+#content  {
   @include shadow;
-  background-color: $pink3;
+  @include roundedSections;
+}
+
+#blog {
+  @include shadow;
+  @include roundedSections;
+  > h2 {
+    font-size: 2rem;
+  }
+  article.post {
+    background-color: $pink4;
+    display: grid;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 25px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "postfig posthead"
+      "postfig postcon"
+      "postfig postmet";
+    grid-gap: 25px;
+    figure {
+      grid-area: postfig;
+      margin: 0;
+    }
+    header {
+      grid-area: posthead;
+    }
+    .post-content {
+      grid-area: postcon;
+    }
+    .post-meta {
+      grid-area: postmet;
+    }
+  }
+}
+
+#articles {
+  @include shadow;
+  @include roundedSections;
+  display:grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+}
+
+footer{
+  text-align: center;
 }
