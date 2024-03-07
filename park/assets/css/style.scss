@@ -1,0 +1,418 @@
+* {
+  box-sizing: border-box;
+
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+$mainFont: "Fraunces", sans-serif;
+$bodyFont: "Poppins", sans-serif;
+$light: #f4eee4;
+$dgreen: #24321c;
+$lgreen: #6a9516;
+
+@mixin alignBox {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@mixin bottomLine {
+  padding-bottom: 0px;
+}
+
+@mixin largePic {
+  object-fit: cover;
+}
+
+@mixin buttonS {
+  margin-top: 50px;
+  padding: 15px;
+  width: max-content;
+  border-radius: 25px;
+  background-color: $lgreen;
+  a {
+    color: $light;
+    font-weight: normal;
+    text-decoration: none;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+  font-family: $bodyFont;
+  color: $dgreen;
+}
+
+header {
+  overflow: visible;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $light;
+
+  a {
+    text-decoration: none;
+  }
+
+  .inner-wrap {
+    max-width: 1280px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    overflow: visible;
+  }
+
+  .brand {
+    display: flex;
+
+    h1 {
+      font-family: $mainFont;
+      font-style: italic;
+      font-weight: 600;
+      align-self: center;
+      font-size: 2em;
+      display: inline-block;
+      padding: 0 0 0 0;
+      a {
+        color: $lgreen;
+      }
+    }
+
+    svg.logo {
+      align-self: center;
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  nav {
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    transition: all 400ms;
+
+    a {
+      font-weight: 500;
+      color: $dgreen;
+      text-decoration: none;
+      padding-left: 16px;
+      display: inline-block;
+      vertical-align: middle;
+
+      &:active,
+      &:hover,
+      &:visited {
+        color: $dgreen;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .nav-active {
+    right: 0;
+  }
+
+  .menu-toggle {
+    display: none;
+
+    svg {
+      width: 36px;
+      height: 36px;
+      align-self: center;
+      display: block;
+
+      &.menu-close {
+        display: none;
+      }
+    }
+  }
+
+  .menu-toggle-active svg {
+    &.menu-open {
+      display: none;
+    }
+
+    &.menu-close {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 678px) {
+  header nav a {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  header nav {
+    margin: 0;
+    background-color: $dgreen;
+    position: absolute;
+    top: 60px;
+    right: -100%;
+    width: 50%;
+    height: calc(100vh - 60px);
+    flex-direction: column;
+    padding: 0;
+    a {
+      color: $light;
+
+      &:active,
+      &:hover,
+      &:visited {
+        color: $light;
+      }
+    }
+  }
+}
+@media screen and (max-width: 678px) {
+  header .menu-toggle {
+    display: flex;
+  }
+}
+
+body {
+  background-color: $light;
+}
+
+#banner {
+  @include bottomLine;
+  margin: auto;
+  display: grid;
+  max-width: 1280px;
+  grid-template-areas:
+    "subHead contentPic"
+    "bannerTitle contentPic";
+  grid-template-columns: 3fr 1fr;
+  padding-bottom: 10px;
+}
+
+.subHead {
+  height: fit-content;
+  text-align: left;
+  font-family: $mainFont;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: $lgreen;
+  grid-area: subHead;
+  padding-top: 125px;
+}
+.bannerTitle {
+  grid-area: bannerTitle;
+  padding-top: 15px;
+  h1 {
+    font-family: $mainFont;
+    color: $dgreen;
+    text-align: left;
+    font-weight: 900;
+    font-size: 6rem;
+    margin: 0;
+  }
+
+  h2 {
+    padding-top: 50px;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  h4 {
+    @include buttonS();
+  }
+}
+
+.contentPic {
+  padding-top: 125px;
+  grid-area: contentPic;
+  width: 350px;
+  img {
+    @include largePic();
+    height: 575px;
+    border-radius: 500px;
+  }
+}
+
+#motto {
+  @include alignBox();
+  background-color: $dgreen;
+  margin-top: 100px;
+  padding: 25px;
+  border-radius: 25px;
+  color: $light;
+  margin-bottom: 50px;
+  h2 {
+    color: $lgreen;
+    font-family: $mainFont;
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+  background: linear-gradient(to left, hsla(80, 74%, 34%, 0.596), $dgreen),
+    url(/park/assets/img/2ndbanner.jpg) no-repeat;
+  background-size: cover;
+}
+
+#articles {
+  @include alignBox();
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 50px;
+  .widget {
+    img {
+      border-radius: 25px;
+      height: 250px;
+      object-fit: cover;
+    }
+  }
+  margin-bottom: 100px;
+}
+
+#mini-splash {
+  @include alignBox();
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  padding-top: 125px;
+  padding-bottom: 50px;
+  #splash-left {
+    h1 {
+      margin-top: 0;
+      font-size: 75px;
+    }
+    h4 {
+      @include buttonS();
+      margin-right:10px;
+    }
+  }
+  #splash-right {
+    img {
+      @include largePic();
+      border-radius: 25px;
+      height: 360px;
+    }
+  }
+}
+#boatskayaks {
+  @include alignBox();
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  padding-bottom: 50px;
+  img {
+    @include largePic();
+    border-radius: 25px;
+    height: 360px;
+  }
+  p {
+    margin:0;
+  }
+  h4 {
+    @include buttonS();
+    margin-right:10px;
+  }
+}
+
+#med-split {
+  @include alignBox();
+  display: grid;
+  grid-template-columns: 6fr auto;
+  h4{
+    margin-top: 1em;
+    margin-right: 0;
+  }
+}
+
+#side-buttons {
+  display: flex;
+  justify-content: start;}
+
+
+footer {
+  @include alignBox();
+  border-top: 2.5px solid;
+  margin: auto;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  h3 {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  .icons {
+    padding-top: 10px;
+  }
+  #footer-left {
+    ul {
+      text-align: left;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
+    i {
+      color: $lgreen;
+    }
+    .eyecon {
+      color: $light;
+    }
+  }
+  #footer-right {
+    text-align: right;
+    p {
+      margin: 0;
+    }
+    i {
+      color: $dgreen;
+    }
+    .eyecon2 {
+      color: $light;
+    }
+  }
+}
+
+.typing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .input-cursor {
+    display: inline-block;
+    width: 2px;
+    background-color: $dgreen;
+    margin-left: 8px;
+    animation: blink 0.6s linear infinite alternate;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

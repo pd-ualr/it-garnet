@@ -1,0 +1,390 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+* {
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+  font-family: "Poppins", sans-serif;
+  color: #24321c;
+}
+
+header {
+  overflow: visible;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f4eee4;
+}
+header a {
+  text-decoration: none;
+}
+header .inner-wrap {
+  max-width: 1280px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  overflow: visible;
+}
+header .brand {
+  display: flex;
+}
+header .brand h1 {
+  font-family: "Fraunces", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  align-self: center;
+  font-size: 2em;
+  display: inline-block;
+  padding: 0 0 0 0;
+}
+header .brand h1 a {
+  color: #6a9516;
+}
+header .brand svg.logo {
+  align-self: center;
+  width: 36px;
+  height: 36px;
+}
+header nav {
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  transition: all 400ms;
+}
+header nav a {
+  font-weight: 500;
+  color: #24321c;
+  text-decoration: none;
+  padding-left: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+header nav a:active, header nav a:hover, header nav a:visited {
+  color: #24321c;
+  text-decoration: none;
+}
+header .nav-active {
+  right: 0;
+}
+header .menu-toggle {
+  display: none;
+}
+header .menu-toggle svg {
+  width: 36px;
+  height: 36px;
+  align-self: center;
+  display: block;
+}
+header .menu-toggle svg.menu-close {
+  display: none;
+}
+header .menu-toggle-active svg.menu-open {
+  display: none;
+}
+header .menu-toggle-active svg.menu-close {
+  display: block;
+}
+
+@media screen and (max-width: 678px) {
+  header nav a {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 678px) {
+  header nav {
+    margin: 0;
+    background-color: #24321c;
+    position: absolute;
+    top: 60px;
+    right: -100%;
+    width: 50%;
+    height: calc(100vh - 60px);
+    flex-direction: column;
+    padding: 0;
+  }
+  header nav a {
+    color: #f4eee4;
+  }
+  header nav a:active, header nav a:hover, header nav a:visited {
+    color: #f4eee4;
+  }
+}
+@media screen and (max-width: 678px) {
+  header .menu-toggle {
+    display: flex;
+  }
+}
+body {
+  background-color: #f4eee4;
+}
+
+#banner {
+  padding-bottom: 0px;
+  margin: auto;
+  display: grid;
+  max-width: 1280px;
+  grid-template-areas: "subHead contentPic" "bannerTitle contentPic";
+  grid-template-columns: 3fr 1fr;
+  padding-bottom: 10px;
+}
+
+.subHead {
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: left;
+  font-family: "Fraunces", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #6a9516;
+  grid-area: subHead;
+  padding-top: 125px;
+}
+
+.bannerTitle {
+  grid-area: bannerTitle;
+  padding-top: 15px;
+}
+.bannerTitle h1 {
+  font-family: "Fraunces", sans-serif;
+  color: #24321c;
+  text-align: left;
+  font-weight: 900;
+  font-size: 6rem;
+  margin: 0;
+}
+.bannerTitle h2 {
+  padding-top: 50px;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: normal;
+}
+.bannerTitle h4 {
+  margin-top: 50px;
+  padding: 15px;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 25px;
+  background-color: #6a9516;
+}
+.bannerTitle h4 a {
+  color: #f4eee4;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.contentPic {
+  padding-top: 125px;
+  grid-area: contentPic;
+  width: 350px;
+}
+.contentPic img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 575px;
+  border-radius: 500px;
+}
+
+#motto {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #24321c;
+  margin-top: 100px;
+  padding: 25px;
+  border-radius: 25px;
+  color: #f4eee4;
+  margin-bottom: 50px;
+  background: linear-gradient(to left, hsla(80, 74%, 34%, 0.596), #24321c), url(/park/assets/img/2ndbanner.jpg) no-repeat;
+  background-size: cover;
+}
+#motto h2 {
+  color: #6a9516;
+  font-family: "Fraunces", sans-serif;
+  font-size: 2.5rem;
+}
+#motto p {
+  font-size: 1.25rem;
+}
+
+#articles {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 50px;
+  margin-bottom: 100px;
+}
+#articles .widget img {
+  border-radius: 25px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#mini-splash {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  padding-top: 125px;
+  padding-bottom: 50px;
+}
+#mini-splash #splash-left h1 {
+  margin-top: 0;
+  font-size: 75px;
+}
+#mini-splash #splash-left h4 {
+  margin-top: 50px;
+  padding: 15px;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 25px;
+  background-color: #6a9516;
+  margin-right: 10px;
+}
+#mini-splash #splash-left h4 a {
+  color: #f4eee4;
+  font-weight: normal;
+  text-decoration: none;
+}
+#mini-splash #splash-right img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+  height: 360px;
+}
+
+#boatskayaks {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  padding-bottom: 50px;
+}
+#boatskayaks img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+  height: 360px;
+}
+#boatskayaks p {
+  margin: 0;
+}
+#boatskayaks h4 {
+  margin-top: 50px;
+  padding: 15px;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 25px;
+  background-color: #6a9516;
+  margin-right: 10px;
+}
+#boatskayaks h4 a {
+  color: #f4eee4;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+#med-split {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 6fr auto;
+}
+#med-split h4 {
+  margin-top: 1em;
+  margin-right: 0;
+}
+
+#side-buttons {
+  display: flex;
+  justify-content: start;
+}
+
+footer {
+  max-width: 1280px;
+  margin: 0 auto;
+  border-top: 2.5px solid;
+  margin: auto;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+footer h3 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+footer .icons {
+  padding-top: 10px;
+}
+footer #footer-left ul {
+  text-align: left;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+footer #footer-left p {
+  margin: 0;
+}
+footer #footer-left i {
+  color: #6a9516;
+}
+footer #footer-left .eyecon {
+  color: #f4eee4;
+}
+footer #footer-right {
+  text-align: right;
+}
+footer #footer-right p {
+  margin: 0;
+}
+footer #footer-right i {
+  color: #24321c;
+}
+footer #footer-right .eyecon2 {
+  color: #f4eee4;
+}
+
+.typing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.typing-container .input-cursor {
+  display: inline-block;
+  width: 2px;
+  background-color: #24321c;
+  margin-left: 8px;
+  animation: blink 0.6s linear infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
