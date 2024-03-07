@@ -597,3 +597,24 @@ button {
     padding-top: 20px;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .bannerTitle {
+    h1 {
+      font-size: 3rem !important;
+    }
+  }
+  #splash-left {
+    h1 {
+      font-size: 45px !important;
+    }
+  }
+  .brand {
+    h1 {
+      font-size: 1.5rem !important;
+    }
+    svg {
+          display: none;
+    }
+  }
+}
