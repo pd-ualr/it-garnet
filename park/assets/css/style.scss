@@ -299,7 +299,7 @@ body {
   }
 }
 
-#kayak1 {
+.kayak1 {
   padding-top: 50px;
 }
 
@@ -311,7 +311,7 @@ body {
   margin-bottom: 50px;
 }
 
-#med-split {
+.med-split {
   @include alignBox();
   display: grid;
   grid-template-columns: 6fr auto;
