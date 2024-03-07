@@ -156,40 +156,6 @@ header {
   }
 }
 
-@media screen and (max-width: 678px) {
-  header nav a {
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 678px) {
-  header nav {
-    margin: 0;
-    background-color: $dgreen;
-    position: absolute;
-    top: 60px;
-    right: -100%;
-    width: 50%;
-    height: calc(100vh - 60px);
-    flex-direction: column;
-    padding: 0;
-    a {
-      color: $light;
-
-      &:active,
-      &:hover,
-      &:visited {
-        color: $light;
-      }
-    }
-  }
-}
-@media screen and (max-width: 678px) {
-  header .menu-toggle {
-    display: flex;
-  }
-}
-
 body {
   background-color: $light;
 }
@@ -333,8 +299,8 @@ body {
   }
 }
 
-#kayak1{
-  padding-top:50px;
+#kayak1 {
+  padding-top: 50px;
 }
 
 #feature-text {
@@ -376,6 +342,7 @@ footer {
   margin: auto;
   font-weight: 500;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -539,4 +506,94 @@ button {
 
 .cabinpic {
   padding-bottom: 50px;
+}
+
+@media screen and (max-width: 720px) {
+  header nav a {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  header nav {
+    margin: 0;
+    background-color: $dgreen;
+    position: absolute;
+    top: 60px;
+    right: -100%;
+    width: 50%;
+    height: calc(100vh - 60px);
+    flex-direction: column;
+    padding: 0;
+    a {
+      color: $light;
+
+      &:active,
+      &:hover,
+      &:visited {
+        color: $light;
+      }
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  header .menu-toggle {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  header .inner-wrap {
+    padding-right: 20px;
+  }
+  #banner {
+    grid-template-areas:
+      "subHead"
+      "bannerTitle"
+      "contentPic";
+  }
+  .contentPic {
+    display: none;
+  }
+  #articles {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #boatskayaks {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #mini-splash {
+    grid-template-columns: 1fr;
+  }
+  #info {
+    grid-template-columns: 1fr;
+    article {
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #articles {
+    grid-template-columns: 1fr;
+  }
+  #split-img {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    flex-direction: column;
+  }
+  #footer-right {
+    text-align: left !important;
+    padding-top: 20px;
+  }
 }
