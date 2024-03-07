@@ -22,7 +22,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/9dcd80ae9e.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/9dcd80ae9e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -71,9 +74,8 @@
         <nav>
           <a href="cabins.html">Cabins</a>
           <a href="camping.html">Camping</a>
-          <a href="lodges.html">Lodges</a>
           <a href="boats.html">Boats</a>
-          <a href="pools.html">Pools</a>
+          <a href="beaches.html">Beaches</a>
           <a href="about.html">About</a>
         </nav>
         <div class="menu-toggle">
@@ -108,9 +110,56 @@
       </div>
     </header>
 
-    <section id="about">
-      <h1>About</h1>
+    <section id="mini-splash">
+      <div id="splash-left">
+        <h1>About Crowley's Ridge</h1>
+        <p> Feel free to explore the beauty of Crowley’s Ridge State Park and immerse yourself in its rich history and natural wonders! </p>
+        </p>
+      </div>
+      <div id="splash-right">
+        <img id="beach-lg" src="assets/img/about.jpg" />
+      </div>
     </section>
+<div id="info">
+<article>
+  <details>
+    <summary>What is Crowley’s Ridge State Park?</summary>
+    <p>Crowley’s Ridge State Park is a 291-acre state park located in Greene County, Arkansas, atop the unique geological formation known as Crowley’s Ridge. The park offers a rustic experience with native log and stone structures constructed by the Civilian Conservation Corps (CCC) in the 1930s. Visitors can explore hiking trails, enjoy a 31-acre fishing lake, and relax in a 3.5-acre swimming area.</p>
+</details>
+  <details>
+    <summary>Where is the park located?</summary>
+    <p>Crowley’s Ridge is a fascinating geological formation believed to have been shaped by water, ice, and wind over a 50-million-year period. It’s an island formed by ancient paths of the Mississippi and Ohio Rivers2.</p>
+</details>
+  <details>
+    <summary>What makes Crowley’s Ridge unique?</summary>
+    <p>The park is situated nine miles west of Paragould on U.S. 412, followed by a two-mile drive south on Hwy. 1681.</p>
+</details>
+  <details>
+    <summary>Is there anything else to explore nearby?</summary>
+    <p>The park is situated nine miles west of Paragould on U.S. 412, followed by a two-mile drive south on Hwy. 1681.</p>
+</details>
+</article>
+<form
+  action="https://formspree.io/f/meqyzenl"
+  method="POST"
+>
+<h2>Have any suggestions for us? Message Us!</h2>
+<div class="labels">
+  <label>
+    Email:
+    <input type="email" name="email">
+  </label>
+  </div>
+  <div class="labels">
+  <label>
+    Message:
+    <textarea name="message" contenteditable></textarea>
+  </label>
+  </div>
+  <!-- your other form fields go here -->
+  <button type="submit">Send your message!</button>
+</form>
+</div>
 
     <script type="text/javascript" src="assets/js/menu-toggle.js"></script>
     <footer>
@@ -118,63 +167,83 @@
         <ul>
           <h3>Crowley's Ridge</h3>
           <li>2092 Hwy. 168 North</li>
-          <li>
-            Paragould, AR 72450</li>
+          <li>Paragould, AR 72450</li>
         </ul>
         <div id="copyright"></div>
         <p>
-          Arkansas State Parks &#169; <script language="JavaScript" type="text/javascript">
+          Arkansas State Parks &#169;
+          <script language="JavaScript" type="text/javascript">
             document.write(new Date().getFullYear());
           </script>
-          </p>
-          <div class="icons">
-            <span class="fa-stack fa-sm"><a href="http://www.facebook.com/StateParksofArkansas" target="_blank">
+        </p>
+        <div class="icons">
+          <span class="fa-stack fa-sm"
+            ><a
+              href="http://www.facebook.com/StateParksofArkansas"
+              target="_blank"
+            >
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fa fa-facebook-f fa-stack-1x eyecon"></i>
             </a>
-            </span>
-            <span class="fa-stack fa-sm"><a href="https://www.instagram.com/arkansasstateparks" target="_blank">
+          </span>
+          <span class="fa-stack fa-sm"
+            ><a
+              href="https://www.instagram.com/arkansasstateparks"
+              target="_blank"
+            >
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fa-brands fa-instagram fa-stack-1x eyecon"></i>
             </a>
-            </span>
-            <span class="fa-stack fa-sm"><a href="https://www.pinterest.com/arstateparks" target="_blank">
+          </span>
+          <span class="fa-stack fa-sm"
+            ><a href="https://www.pinterest.com/arstateparks" target="_blank">
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fa-brands fa-pinterest-p fa-stack-1x eyecon"></i>
             </a>
-            </span>
-            <span class="fa-stack fa-sm"><a href="https://twitter.com/arstatepark" target="_blank">
+          </span>
+          <span class="fa-stack fa-sm"
+            ><a href="https://twitter.com/arstatepark" target="_blank">
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fa-brands fa-twitter fa-stack-1x eyecon"></i>
             </a>
-            </span>
-            <span class="fa-stack fa-sm"><a href="http://www.youtube.com/ArkansasStateParks" target="_blank">
+          </span>
+          <span class="fa-stack fa-sm"
+            ><a
+              href="http://www.youtube.com/ArkansasStateParks"
+              target="_blank"
+            >
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fa-brands fa-youtube fa-stack-1x eyecon"></i>
             </a>
-            </span>
-          </div>
-        </section>
-        <section id="footer-right">
-          <h3>Availability Hours</h3>
-          <p>Open daily 8 A.M. to 5 P.M.</p>
-          <p>Closed on all Federal Holidays.</p>
-          <p>All ameneties are available year-round.</p>
-          <div class="icons">
-          <span class="fa-stack fa-sm"><a href="mailto:someone@example.com">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-envelope fa-stack-1x eyecon2"></i>
-          </a>
           </span>
-          <span class="fa-stack fa-sm"><a href="tel:870-573-6751">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa-solid fa-phone fa-stack-1x eyecon2"></i>
-          </a>
+        </div>
+      </section>
+      <section id="footer-right">
+        <h3>Availability Hours</h3>
+        <p>Open daily 8 A.M. to 5 P.M.</p>
+        <p>Closed on all Federal Holidays.</p>
+        <p>All ameneties are available year-round.</p>
+        <div class="icons">
+          <span class="fa-stack fa-sm"
+            ><a href="someone@example.com">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-envelope fa-stack-1x eyecon2"></i>
+            </a>
           </span>
-          <span class="fa-stack fa-sm"><a href="https://www.google.com/maps/dir//Crowley's+Ridge+State+Park,+2092+Hwy.+168+North,+Paragould,+72450,+AR" target="_blank">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa-solid fa-location-dot fa-stack-1x eyecon2"></i>
-          </a>
+          <span class="fa-stack fa-sm"
+            ><a href="tel:870-573-6751">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa-solid fa-phone fa-stack-1x eyecon2"></i>
+            </a>
+          </span>
+          <span class="fa-stack fa-sm"
+            ><a
+              href="https://www.google.com/maps/dir//Crowley's+Ridge+State+Park,+2092+Hwy.+168+North,+Paragould,+72450,+AR"
+              target="_blank"
+            >
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa-solid fa-location-dot fa-stack-1x eyecon2"></i>
+            </a>
           </span>
         </div>
       </section>

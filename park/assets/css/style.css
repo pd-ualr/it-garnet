@@ -11,6 +11,11 @@ img {
   width: 100%;
 }
 
+ul {
+  margin-top: 0;
+  padding-left: 1.1em;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -200,6 +205,7 @@ body {
 #motto {
   max-width: 1280px;
   margin: 0 auto;
+  scrollbar-gutter: stable both-edges;
   background-color: #24321c;
   margin-top: 100px;
   padding: 25px;
@@ -221,10 +227,10 @@ body {
 #articles {
   max-width: 1280px;
   margin: 0 auto;
+  scrollbar-gutter: stable both-edges;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 50px;
-  margin-bottom: 100px;
 }
 #articles .widget img {
   border-radius: 25px;
@@ -236,11 +242,11 @@ body {
 #mini-splash {
   max-width: 1280px;
   margin: 0 auto;
+  scrollbar-gutter: stable both-edges;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
   padding-top: 125px;
-  padding-bottom: 50px;
 }
 #mini-splash #splash-left h1 {
   margin-top: 0;
@@ -260,6 +266,9 @@ body {
   font-weight: normal;
   text-decoration: none;
 }
+#mini-splash #splash-left h2 {
+  padding-top: 25px;
+}
 #mini-splash #splash-right img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -270,6 +279,7 @@ body {
 #boatskayaks {
   max-width: 1280px;
   margin: 0 auto;
+  scrollbar-gutter: stable both-edges;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
@@ -299,15 +309,38 @@ body {
   text-decoration: none;
 }
 
+#kayak1 {
+  padding-top: 50px;
+}
+
+#feature-text {
+  color: #6a9516;
+}
+
+#beach-lg {
+  margin-bottom: 50px;
+}
+
 #med-split {
   max-width: 1280px;
   margin: 0 auto;
+  scrollbar-gutter: stable both-edges;
   display: grid;
   grid-template-columns: 6fr auto;
 }
 #med-split h4 {
   margin-top: 1em;
   margin-right: 0;
+}
+
+#split-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  padding-bottom: 50px;
+}
+#split-img img {
+  height: 180px !important;
 }
 
 #side-buttons {
@@ -318,6 +351,7 @@ body {
 footer {
   max-width: 1280px;
   margin: 0 auto;
+  scrollbar-gutter: stable both-edges;
   border-top: 2.5px solid;
   margin: auto;
   font-weight: 500;
@@ -387,4 +421,99 @@ footer #footer-right .eyecon2 {
   100% {
     opacity: 0;
   }
+}
+article {
+  padding-bottom: 50px;
+}
+article details {
+  color: #24321c;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  background-color: #6a9516;
+  color: #f4eee4;
+}
+article details p {
+  margin: 0;
+  padding-top: 15px;
+}
+
+summary {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+#faq {
+  max-width: 1280px;
+  margin: 0 auto;
+  scrollbar-gutter: stable both-edges;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+form {
+  border-radius: 25px;
+  background-color: #24321c;
+  color: #f4eee4;
+  padding: 15px;
+  max-width: auto;
+  margin-bottom: 60px;
+}
+form h2 {
+  margin: 0;
+  padding-bottom: 2px;
+}
+
+input[type=email] {
+  border-radius: 20px;
+  border: 2.5px solid #24321c;
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+}
+
+textarea {
+  vertical-align: top;
+  border-radius: 20px;
+  border: 2.5px solid #24321c;
+  width: 100%;
+  height: 65px;
+  padding-left: 10px;
+}
+
+#info {
+  max-width: 1280px;
+  margin: 0 auto;
+  scrollbar-gutter: stable both-edges;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  height: auto;
+}
+
+.labels {
+  margin-top: 10px;
+}
+
+button {
+  border-radius: 20px;
+  border: 2.5px solid #24321c;
+  margin-top: 15px !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.cabinpic {
+  padding-bottom: 50px;
 }/*# sourceMappingURL=style.css.map */

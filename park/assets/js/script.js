@@ -1,7 +1,9 @@
 const carouselText = [
-  { text: "Timeless Beauty" },
-  { text: "Rich History" },
-  { text: "Exciting Adventures" },
+  { text: "Cabins" },
+  { text: "Camps" },
+  { text: "Boats" },
+  { text: "Beaches" },
+  { text: "Trails" },
 ];
 
 $(document).ready(async function () {
@@ -23,7 +25,7 @@ async function deleteSentence(eleRef) {
   const sentence = $(eleRef).html();
   const letters = sentence.split("");
   let i = 0;
-  while (letters.length > 0) {
+  while (letters.length > 7) {
     await waitForMs(100);
     letters.pop();
     $(eleRef).html(letters.join(""));
@@ -52,3 +54,24 @@ function updateFontColor(eleRef, color) {
 function waitForMs(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
+
+
+// Fetch all the details element.
+const details = document.querySelectorAll("details");
+
+// Add the onclick listeners.
+details.forEach((detail) => {
+  detail.addEventListener("toggle", () => {
+    if (detail.open) setTargetDetail(detail);
+  });
+});
+
+// Close all the details that are not targetDetail.
+function setTargetDetail(targetDetail) {
+  details.forEach((detail) => {
+    if (detail !== targetDetail) {
+      detail.open = false;
+    }
+  });
+}
+
