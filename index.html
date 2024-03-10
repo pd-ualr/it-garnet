@@ -1,77 +1,166 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>IT Garnet | PD-UALR</title>
-    <meta name="description" content="My projects for IT Garnet" />
-    <meta name="author" content="PD-UALR" />
+    <meta charset="UTF-8" />
+    <title>IT Garnet</title>
+    <meta name="description" content="IT Garnet Coursework" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="icon" href="assets/img/favicon.ico" sizes="any" />
+    <link rel="icon" href="assets/img/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/img/icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/9dcd80ae9e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-
   <body>
-    <header>
-      <h1><a href="index.html">IT Garnet</a></h1>
-    </header>
-    <nav class="primary">
-      <ul>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>
+          <a href="index.html"
+            ><i class="fa-sharp fa-regular fa-gem fa-xs"></i> IT Garnet</a
+          >
+        </h1>
+        <p>
+          The second semester of the Information Technology program that build
+          on concepts and skills acquired from ITEC 3610 with a focus on
+          advanced problem-solving techniques and team project work.
+        </p>
+        <ul class="list-unstyled list-inline">
+          <li>Related Links:</li>
+          <li>
+            <a href="https://github.com/pd-ualr" target="”_blank”"
+              ><i class="fa-brands fa-github"></i> Github</a
+            >
+          </li>
+          <li>
+            <a href="https://pdualr.wordpress.com/" target="”_blank"
+              ><i class="fa-brands fa-wordpress"></i> Wordpress</a
+            >
+          </li>
+          <li>
+            <a href="https://pdualr.wordpress.com/" target="”_blank"
+              ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+            >
+          </li>
+        </ul>
+        <ul class="list-unstyled list-inline">
+          <li>Course Pages:</li>
+          <li>
+            <a
+              href="https://thomaswallace.net/course/it-minor/it-garnet/"
+              target="”_blank"
+              >Thomas Wallace</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://web-projects.net/aereves/category/cohorts/it-garnet/"
+              target="”_blank"
+              >Elizabeth Reves</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://web-projects.net/aereves/category/cohorts/it-garnet/"
+              target="”_blank"
+              >Bruce Bauer</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container filtering">
+      <ul class="nav nav-pills nav-filter-cat">
         <li>
+          <button class="cat-all active">
+            <i class="fa-solid fa-sort"></i> Show All
+          </button>
+        </li>
+        <li>
+          <button class="cat-frontend" data-cat="cat-frontend">
+            <i class="fa-brands fa-html5"></i> Frontend
+          </button>
+        </li>
+        <li>
+          <button class="cat-backend" data-cat="cat-backend">
+            <i class="fa-brands fa-js"></i> Backend
+          </button>
+        </li>
+        <li>
+          <button class="cat-media" data-cat="cat-media">
+            <i class="fa-solid fa-paperclip"></i> Media Assets
+          </button>
+        </li>
+      </ul>
+      <div class="row filter-cat-results">
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-frontend">
           <a href="cheatsheet/index.html">HTML Cheatsheet</a>
-        </li>
-        <li>
+        </div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-frontend">
           <a href="prototype/index.html">Prototype Assignment</a>
-        </li>
-        <li>
+        </div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-frontend">
           <a href="css_demo/index.html">CSS Demo</a>
-        </li>
-        <li>
+        </div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-backend">
           <a href="validation/index.html">Validation</a>
-        </li>
-        <li>
+        </div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-frontend">
           <a href="assets/img/gridgarden.png">CSS Grid Practice</a>
-        </li>
-        <li>
+        </div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-frontend">
           <a href="cheatsheet2/index.html">HTML Cheatsheet Part 2</a>
-        </li>
-        <li>
+        </div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-frontend">
           <a href="positioning-lab/lab1-float.html">Positioning Lab 1: Float</a>
-        </li>
-        <li>
+        </div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-frontend">
           <a href="positioning-lab/lab2-float.html">Positioning Lab 2: Float</a>
-        </li>
-        <li>
+        </div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-frontend">
           <a href="positioning-lab/lab3-absolute.html"
             >Positioning Lab 3: Absolute</a
           >
-        </li>
-        <li>
+        </div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-frontend">
           <a href="positioning-lab/lab4-absolute.html"
             >Positioning Lab 4: Absolute</a
           >
-        </li>
-        <li>
-          <a href="assets/img/illustrator_assignment.png">Illustrator Assignment</a>
-        </li>
-        <li>
+        </div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-media">
+          <a href="assets/img/illustrator_assignment.png"
+            >Illustrator Assignment</a
+          >
+        </div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-backend">
           <a href="circle/index.html">Circle JS Lab</a>
-        </li>
-        <li>
+        </div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-backend">
           <a href="calculator/index.html">Calculator JS Lab</a>
-        </li>
-        <li>
+        </div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-backend">
           <a href="unitconversion/index.html">JQuery Unit Conversion</a>
-        </li>
-        <li>
-          <a href="park/index.html">Crowley's Ridge Park</a>
-        </li>
-      </ul>
-    </nav>
+        </div>
+        <div class="col col-md-3 col-xs-6 f-cat" data-cat="cat-frontend">
+          <a href="park/index.html">Microsite Park</a>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

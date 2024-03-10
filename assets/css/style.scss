@@ -1,0 +1,111 @@
+$background: #650914;
+$background2: #201a1a;
+$background3: #2b2222;
+$textcolor1: #ffb3b1;
+$red2: #5d3f3e;
+$red3: #a08c8b;
+$red4: #5d3f3e;
+$red5: #ffdad8;
+body {
+  background-color: $background2;
+  font-family: "Outfit", sans-serif;
+}
+
+.jumbotron {
+  background-color: $background;
+  color: $textcolor1;
+  h1 {
+    color: $textcolor1;
+  }
+  p {
+    font-weight: 400;
+  }
+  a {
+    color: $textcolor1;
+  }
+}
+
+h1 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 800;
+}
+
+a:link, a:visited, a:hover, a:active, ul li {
+    text-decoration: none;
+}
+
+button {
+  padding: 1em;
+  border: 0;
+  margin: 0 0.5em 0.5em -10px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+button.cat-frontend,
+button.cat-backend,
+button.cat-media{
+    background: $background2;
+    color: $red5;
+     border: 1px solid $red3;
+    border-radius: 50px;
+    margin-left:5px;
+  }
+
+button.cat-all {
+    background: $red4;
+    color: $red5;
+     border: 1px solid $background2;
+    border-radius: 50px;
+}
+
+.f-cat {
+  color: $red5;
+  padding: 1em;
+  border: 5px solid $background2;
+  border-radius: 50px;
+  background: $background3;
+    &:hover {
+    background: $red4;
+    color: $red5;
+  }
+  a {
+    color:$red5;
+  }
+  a:hover
+  {
+    color: $red5;
+    text-decoration: none;
+  }
+}
+
+.row .col {
+  opacity: 0;
+  display: none;
+
+  &.active {
+    opacity: 1;
+    display: block;
+    -webkit-animation: fadeIn 0.65s ease forwards;
+    animation: fadeIn 0.65s ease forwards;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
