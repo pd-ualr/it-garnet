@@ -22,7 +22,11 @@ h1 {
   font-weight: 800;
 }
 
-a:link, a:visited, a:hover, a:active, ul li {
+a:link,
+a:visited,
+a:hover,
+a:active,
+ul li {
   text-decoration: none;
 }
 
@@ -41,7 +45,8 @@ button {
 
 button.cat-frontend,
 button.cat-backend,
-button.cat-media, button.cat-all {
+button.cat-media,
+button.cat-all {
   background: #201a1a;
   color: #ffdad8;
   border: 1px solid #a08c8b;
@@ -50,12 +55,10 @@ button.cat-media, button.cat-all {
 }
 button.cat-frontend:hover,
 button.cat-backend:hover,
-button.cat-media:hover, button.cat-all:hover {
-  background: #650914;
-  color: #ffb3b1;
-  border: 1px solid #201a1a;
-  border-radius: 50px;
-  margin-right: 20px;
+button.cat-media:hover,
+button.cat-all:hover {
+  background: #5d3f3e;
+  color: #ffdad8;
 }
 
 .f-cat {
@@ -92,5 +95,43 @@ button.cat-media:hover, button.cat-all:hover {
   }
   100% {
     opacity: 1;
+  }
+}
+.menu .button {
+  transition: all 0.3s ease;
+}
+
+.menu .button.selected {
+  background: #650914;
+  color: #ffb3b1;
+  border: 1px solid #201a1a;
+}
+
+.hlink a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #201a1a;
+  color: #a08c8b;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 5;
+}
+footer .container {
+  border-top: 1px solid #a08c8b;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.filtering {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  footer {
+    position: relative;
   }
 }/*# sourceMappingURL=style.css.map */

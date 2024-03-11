@@ -30,8 +30,12 @@ h1 {
   font-weight: 800;
 }
 
-a:link, a:visited, a:hover, a:active, ul li {
-    text-decoration: none;
+a:link,
+a:visited,
+a:hover,
+a:active,
+ul li {
+  text-decoration: none;
 }
 
 .htitle {
@@ -48,20 +52,18 @@ button {
 
 button.cat-frontend,
 button.cat-backend,
-button.cat-media, button.cat-all{
-    background: $background2;
+button.cat-media,
+button.cat-all {
+  background: $background2;
+  color: $red5;
+  border: 1px solid $red3;
+  border-radius: 50px;
+  margin-right: 20px;
+  &:hover {
+    background: $red4;
     color: $red5;
-     border: 1px solid $red3;
-    border-radius: 50px;
-    margin-right:20px;
-        &:hover {
-    background: $background;
-    color: $textcolor1;
-     border: 1px solid $background2;
-    border-radius: 50px;
-    margin-right:20px;
   }
-  }
+}
 
 .f-cat {
   color: $red5;
@@ -69,15 +71,14 @@ button.cat-media, button.cat-all{
   border: 5px solid $background2;
   border-radius: 50px;
   background: $background3;
-    &:hover {
+  &:hover {
     background: $red4;
     color: $red5;
   }
   a {
-    color:$red5;
+    color: $red5;
   }
-  a:hover
-  {
+  a:hover {
     color: $red5;
     text-decoration: none;
   }
@@ -110,5 +111,47 @@ button.cat-media, button.cat-all{
   }
   100% {
     opacity: 1;
+  }
+}
+
+.menu .button {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.menu .button.selected {
+  background: $background;
+  color: $textcolor1;
+  border: 1px solid $background2;
+}
+
+.hlink {
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+footer {
+  background-color: $background2;
+  color: $red3;
+position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   z-index: 5;
+  .container {
+      border-top: 1px solid $red3;
+      padding-top:10px;
+      padding-bottom:10px;
+  }
+}
+
+.filtering{
+  margin-bottom:30px;
+}
+
+@media screen and (max-width: 1000px) {
+  footer{
+    position: relative;
   }
 }
