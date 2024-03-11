@@ -26,6 +26,10 @@ a:link, a:visited, a:hover, a:active, ul li {
   text-decoration: none;
 }
 
+.htitle {
+  font-weight: 600;
+}
+
 button {
   padding: 1em;
   border: 0;
@@ -42,7 +46,7 @@ button.cat-media {
   color: #ffdad8;
   border: 1px solid #a08c8b;
   border-radius: 50px;
-  margin-left: 5px;
+  margin-right: 20px;
 }
 
 button.cat-all {
@@ -50,6 +54,7 @@ button.cat-all {
   color: #ffdad8;
   border: 1px solid #201a1a;
   border-radius: 50px;
+  margin-right: 20px;
 }
 
 .f-cat {
