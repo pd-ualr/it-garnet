@@ -41,17 +41,18 @@ button {
 
 button.cat-frontend,
 button.cat-backend,
-button.cat-media {
+button.cat-media, button.cat-all {
   background: #201a1a;
   color: #ffdad8;
   border: 1px solid #a08c8b;
   border-radius: 50px;
   margin-right: 20px;
 }
-
-button.cat-all {
-  background: #5d3f3e;
-  color: #ffdad8;
+button.cat-frontend:hover,
+button.cat-backend:hover,
+button.cat-media:hover, button.cat-all:hover {
+  background: #650914;
+  color: #ffb3b1;
   border: 1px solid #201a1a;
   border-radius: 50px;
   margin-right: 20px;
