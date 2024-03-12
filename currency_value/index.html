@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Unit Conversion" />
+    <meta name="keywords" content="JavaScript, HTML, CSS" />
+    <meta name="author" content="PD-UALR" />
+    <title>Currency Value History</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+  <body>
+    <form id="myform">
+      <h1>Currency Value History</h1>
+      <br />
+      <label class="formlabel" for="fromValue">Base Currency: </label>
+      <select
+        id="baseCurrency"
+        name="baseCurrency"
+        data-rule-required="true"
+        data-msg-required="Base Currency is Required"
+      >
+        <option value="">Select a Currency...</option>
+      </select>
+      <label class="error" id="baseCurrencyError" for="baseCurrency"></label>
+      <br />
+
+      <label class="formlabel" for="fromValue">Convert to Currency: </label>
+      <select
+        id="baseCurrency"
+        name="baseCurrency"
+        data-rule-required="true"
+        data-msg-required="Base Currency is Required"
+      >
+        <option value="">Select a Currency...</option>
+      </select>
+      <label class="error" id="baseCurrencyError" for="baseCurrency"></label>
+      <br />
+
+      <label for="fromDate" class="formlabel">From Date: </label>
+      <input
+        type="date"
+        id="fromDate"
+        name="fromDate"
+        value="mm/dd/yyyy"
+        data-rule-required="true"
+        data-msg-required="From Date is Required"
+        data-rule-date="true"
+        data-msg-date="Date must be mm/dd/yyyy format"
+      />
+      <label class="error" id="fromDateError" for="fromDate"></label>
+      <br />
+
+      <label for="toDate" class="formlabel">To Date:</label>
+      <input
+        type="date"
+        id="toDate"
+        name="toDate"
+        value="mm/dd/yyyy"
+        data-rule-required="true"
+        data-msg-required="To Date is Required"
+        data-rule-date="true"
+        data-msg-date="Date must be mm/dd/yyyy format"
+      />
+      <label class="error" id="toDateError" for="toDate"></label>
+      <br />
+<br/>
+      <input
+        type="button"
+        value="Show Results"
+        name="Calculate"
+        onclick="calculate();"
+      />
+      <input type="button" value="Clear" name="Clear" onclick="clearform();" />
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
