@@ -233,8 +233,7 @@ body {
   p {
     font-size: 1.25rem;
   }
-  background: linear-gradient(to left, hsla(80, 74%, 34%, 0.596), $dgreen),
-    url(/park/assets/img/2ndbanner.jpg) no-repeat;
+  background: $dgreen;
   background-size: cover;
 }
 
@@ -453,7 +452,6 @@ form {
   background-color: $dgreen;
   color: $light;
   padding: 15px;
-  max-width: auto;
   margin-bottom: 60px;
   h2 {
     margin: 0;
@@ -480,6 +478,8 @@ textarea {
   width: 100%;
   height: 65px;
   padding-left: 10px;
+    resize: none;
+
 }
 
 #info {
@@ -614,7 +614,7 @@ button {
       font-size: 1.5rem !important;
     }
     svg {
-          display: none;
+      display: none;
     }
   }
 }

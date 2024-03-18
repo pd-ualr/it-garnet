@@ -183,7 +183,7 @@ body {
   border-radius: 25px;
   color: #f4eee4;
   margin-bottom: 50px;
-  background: linear-gradient(to left, hsla(80, 74%, 34%, 0.596), #24321c), url(/park/assets/img/2ndbanner.jpg) no-repeat;
+  background: #24321c;
   background-size: cover;
 }
 #motto h2 {
@@ -437,7 +437,6 @@ form {
   background-color: #24321c;
   color: #f4eee4;
   padding: 15px;
-  max-width: auto;
   margin-bottom: 60px;
 }
 form h2 {
@@ -460,6 +459,7 @@ textarea {
   width: 100%;
   height: 65px;
   padding-left: 10px;
+  resize: none;
 }
 
 #info {
